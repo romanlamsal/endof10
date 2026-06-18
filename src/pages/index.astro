@@ -1,0 +1,225 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// Reusable utility-class strings
+const wrap = 'mx-auto w-full max-w-[860px] px-5';
+const btnBase =
+  'inline-block rounded-full px-6 py-3 font-semibold no-underline transition-transform active:translate-y-px';
+const btnPrimary = `${btnBase} bg-accent text-white hover:bg-accent-hover`;
+const btnGhost = `${btnBase} border border-border text-text hover:border-accent`;
+const badge =
+  'inline-block rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.12em]';
+const card = 'rounded-2xl border border-border bg-card p-6';
+const sectionH2 =
+  'mt-3 mb-4 text-2xl font-bold tracking-tight sm:text-3xl md:text-[2.1rem]';
+---
+
+<Layout title="End of 10 – Windows 10 läuft aus? Dein Computer darf bleiben.">
+  <!-- HERO -->
+  <header
+    class="border-b border-border py-16"
+    style="background: radial-gradient(1200px 500px at 50% -10%, var(--color-accent-soft), transparent 60%), var(--color-bg);"
+  >
+    <div class={`${wrap} text-center`}>
+      <p class="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-accent">
+        Nachbarschaftshilfe rund um das Windows-10-Aus
+      </p>
+      <h1 class="mb-4 text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl md:text-6xl">
+        Dein Computer ist<br />kein Auslaufmodell.
+      </h1>
+      <p class="mx-auto mb-8 max-w-2xl text-lg text-text-muted sm:text-xl">
+        Im Oktober 2026 zieht Microsoft bei Windows&nbsp;10 den Stecker.
+        Millionen funktionierende Geräte werden über Nacht für „zu alt“ erklärt
+        – nicht, weil sie es sind, sondern weil sich am Neukauf verdienen lässt.<br>
+        Wir helfen dir, deinen Computer zu retten.
+      </p>
+      <div class="mb-8 flex flex-wrap justify-center gap-3">
+        <a class={btnPrimary} href="#kontakt">Mach mit</a>
+        <a class={btnGhost} href="#loesung">Wie das läuft</a>
+      </div>
+      <p class="text-[0.9rem] text-text-muted">
+        Ein kostenloses Angebot von Freiwilligen aus deiner Nachbarschaft.
+      </p>
+    </div>
+  </header>
+
+  <main class={wrap}>
+    <!-- KONTEXT -->
+    <section class="border-b border-border py-12" id="kontext">
+      <span class={`${badge} bg-accent-soft text-[#cbe0ff]`}>Was passiert</span>
+      <h2 class={sectionH2}>Microsoft schaltet Windows 10 ab</h2>
+      <p class="mb-4 max-w-[60ch]">
+        Am 13. Oktober 2026 ist Schluss mit Updates für Windows&nbsp;10. Wer
+        weiter Sicherheitsupdates bekommen will, soll auf Windows&nbsp;11
+        wechseln.
+      </p>
+      <p class="max-w-[60ch]">
+        Ohne Updates wird dein Gerät mit der Zeit angreifbar, weiter verstärkt durch
+        KI Tools um neue Sicherheitslücken zu finden. Deine Gefährdung will Microsoft
+        ausnutzen um Nutzer auf Windows 11 zu bringen.
+      </p>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="border-b border-border py-12" id="problem">
+      <span class={`${badge} bg-accent-soft text-[#cbe0ff]`}>Das Problem</span>
+      <h2 class={sectionH2}>Funktioniert noch – und soll trotzdem weg</h2>
+      <p class="mb-4 max-w-[60ch]">
+        Microsoft entscheidet, ob Windows&nbsp;11 auf deinem Computer installiert werden kann.
+        Ist dein Gerät älter als drei Jahre ist es möglich, dass Microsoft sich weigert, auf
+        deinem einwandfrei funktionierenden Gerät Windows 11 zu installieren.
+      </p>
+      <p class="max-w-[60ch]">
+        Das ist kein Zufall, sondern Absicht: Ein Computer, der einwandfrei
+        läuft, wird für veraltet erklärt – <strong>damit du dir einen neuen kaufst</strong>. Du
+        zahlst, die Umwelt zahlt. Den Gewinn streichen Microsoft und seine Partner ein.
+      </p>
+      <ul class="mt-6 grid list-none grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-3 p-0">
+        <li class={`${card} text-text-muted`}>
+          <strong class="mb-1 block text-2xl text-text">Millionen Geräte</strong>
+          sollen ausgetauscht werden, obwohl sie einwandfrei laufen.
+        </li>
+        <li class={`${card} text-text-muted`}>
+          <strong class="mb-1 block text-2xl text-text">über 75&nbsp;%</strong>
+          der CO₂-Last eines Computers stecken schon in seiner Herstellung. Neukauf ist kein Klimaschutz.
+        </li>
+        <li class={`${card} text-text-muted`}>
+          <strong class="mb-1 block text-2xl text-text">0&nbsp;€</strong>
+          kostet Linux. Und unsere Hilfe gibt es ebenfalls geschenkt.
+        </li>
+      </ul>
+    </section>
+
+    <!-- LÖSUNG -->
+    <section class="border-b border-border py-12" id="loesung">
+      <span class={`${badge} bg-[#16331f] text-[#9be7ad]`}>Unsere Antwort</span>
+      <h2 class={sectionH2}>Wir nehmen unsere Geräte selbst in die Hand</h2>
+      <p class="mb-4 max-w-[60ch]">
+        Anstatt da mitzuspielen, setzen wir uns mit dir zusammen und installieren
+        Linux auf deinem Gerät – ein freies Betriebssystem, das niemandem gehört
+        und dir nichts verkaufen will. Häufig läuft ein älterer Computer damit
+        sogar wieder spürbar schneller.
+      </p>
+      <p class="max-w-[60ch]">
+        Linux heißt <strong>digitale Selbstbestimmung</strong>: Du entscheidest, was auf deinem
+        Rechner passiert. Tauchen unterwegs kleine Hürden
+        auf, lösen wir sie gemeinsam. Vorwissen brauchst du keins, und am Ende
+        gehört dein Gerät wieder dir.
+      </p>
+
+      <div class="mt-8 grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-4">
+        <div class={card}>
+          <span class="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-accent font-bold text-white">0</span>
+          <h3 class="mb-1 text-lg font-bold">Vorbereiten</h3>
+          <p class="text-[0.95rem] text-text-muted">Sichere deine wichtigen Daten ab. Bei der Linux installation werden sämtliche Daten auf deinem Gerät erstmal gelöscht.</p>
+        </div>
+        <div class={card}>
+          <span class="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-accent font-bold text-white">1</span>
+          <h3 class="mb-1 text-lg font-bold">Kennenlernen</h3>
+          <p class="text-[0.95rem] text-text-muted">Wir schauen uns gemeinsam an, was du nutzt und was dir wichtig ist.</p>
+        </div>
+        <div class={card}>
+          <span class="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-accent font-bold text-white">2</span>
+          <h3 class="mb-1 text-lg font-bold">Einrichten</h3>
+          <p class="text-[0.95rem] text-text-muted">Wir wählen eine passende Linux-Variante, installieren sie und übernehmen deine Daten.</p>
+        </div>
+        <div class={card}>
+          <span class="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-accent font-bold text-white">3</span>
+          <h3 class="mb-1 text-lg font-bold">Loslegen</h3>
+          <p class="text-[0.95rem] text-text-muted">Du bekommst eine kurze Einführung – danach gehört dein Gerät wieder dir.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WARUM LINUX -->
+    <section class="border-b border-border py-12" id="warum">
+      <span class={`${badge} bg-accent-soft text-[#cbe0ff]`}>Was du gewinnst</span>
+      <h2 class={sectionH2}>Software upgraden statt Hardware wegwerfen</h2>
+      <div class="mt-6 grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-4">
+        <div class={card}>
+          <h3 class="mb-1 text-lg font-bold">🔒 Sicher ohne Erpressung</h3>
+          <p class="text-[0.95rem] text-text-muted">Regelmäßige Updates, ohne dass dir jemand neue Hardware aufzwingt.</p>
+        </div>
+        <div class={card}>
+          <h3 class="mb-1 text-lg font-bold">⚡ Wieder flott</h3>
+          <p class="text-[0.95rem] text-text-muted">Ältere Geräte laufen oft wieder schnell, statt künstlich ausgebremst zu werden.</p>
+        </div>
+        <div class={card}>
+          <h3 class="mb-1 text-lg font-bold">🕵️ Deine Daten bleiben deine</h3>
+          <p class="text-[0.95rem] text-text-muted">Keine eingebaute Werbung, keine Schnüffelei im Hintergrund. Keine KI die du nicht willst.</p>
+        </div>
+        <div class={card}>
+          <h3 class="mb-1 text-lg font-bold">🌱 Gegen die Wegwerflogik</h3>
+          <p class="text-[0.95rem] text-text-muted">Du nutzt dein Gerät weiter, statt es auf Kommando zu ersetzen.</p>
+        </div>
+        <div class={card}>
+          <h3 class="mb-1 text-lg font-bold">🆓 Frei &amp; kostenlos</h3>
+          <p class="text-[0.95rem] text-text-muted">Keine Lizenzen, keine Abos, kein Konzern als Türsteher.</p>
+        </div>
+        <div class={card}>
+          <h3 class="mb-1 text-lg font-bold">🤝 Gemeinsam</h3>
+          <p class="text-[0.95rem] text-text-muted">Wir machen das zusammen – Hilfe muss keine Ware sein.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="py-12 text-center" id="kontakt">
+      <span class={`${badge} bg-[#16331f] text-[#9be7ad]`}>Mach mit</span>
+      <h2 class={sectionH2}>Schluss mit dem Wegwerf-Zwang</h2>
+      <p class="mx-auto max-w-[60ch]">
+        Ob du dein eigenes Gerät umstellen willst, noch Fragen hast oder selbst
+        mit anpacken möchtest – meld dich. Kostenlos, unverbindlich und ohne
+        Hintergedanken.
+      </p>
+      <div class="my-8 grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-4 text-left">
+        <div class={`${card} flex flex-col`}>
+          <h3 class="mb-2 text-lg font-bold">💻 Ich möchte umsteigen</h3>
+          <p class="mb-6 grow text-[0.95rem] text-text-muted">
+            Dein Gerät macht Windows&nbsp;11 nicht mit oder du willst es einfach
+            behalten? Melde dich, dann finden wir einen Termin und machen es
+            zukunftsfest.
+          </p>
+          <a
+            class={`${btnPrimary} self-start`}
+            href="mailto:endof10@lamsal.dev?subject=End%20of%2010%20%E2%80%93%20Ich%20m%C3%B6chte%20umsteigen&body=Hallo%2C%20ich%20w%C3%BCrde%20gerne%20Linux%20auf%20meinem%20Ger%C3%A4t%20ausprobieren."
+          >
+            Als Umsteiger:in melden
+          </a>
+        </div>
+        <div class={`${card} flex flex-col`}>
+          <h3 class="mb-2 text-lg font-bold">🤝 Ich möchte helfen</h3>
+          <p class="mb-6 grow text-[0.95rem] text-text-muted">
+            Du kennst dich mit Linux aus? Werd Teil der Truppe und hilf anderen,
+            sich aus der Abhängigkeit zu lösen. Über jede Hand freuen wir uns.
+          </p>
+          <a
+            class={`${btnGhost} self-start`}
+            href="mailto:endof10@lamsal.dev?subject=End%20of%2010%20%E2%80%93%20Ich%20m%C3%B6chte%20als%20Helfer%3Ain%20mitmachen&body=Hallo%2C%20ich%20w%C3%BCrde%20gerne%20als%20Helfer%3Ain%20mitmachen."
+          >
+            Als Helfer:in melden
+          </a>
+        </div>
+      </div>
+      <div class="mt-4">
+        <p class="mb-3 text-[0.95rem] text-text-muted">
+          Du erreichst uns ganz einfach per E-Mail an:
+        </p>
+        <a
+          class="inline-block break-all select-all rounded-2xl border border-border bg-card px-5 py-3 text-xl font-bold text-accent no-underline hover:border-accent"
+          href="mailto:endof10@lamsal.dev"
+        >
+          endof10@lamsal.dev
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class={`${wrap} py-12 text-center text-[0.9rem] text-text-muted`}>
+    <p>
+      Inspiriert von der internationalen Initiative
+      <a class="text-accent" href="https://endof10.org/" target="_blank" rel="noopener">End of 10</a>:
+      „Upgrade your software, not your hardware.“
+    </p>
+  </footer>
+</Layout>
